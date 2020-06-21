@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:id="@+id/botNav_transactions"
+            android:enabled="true"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="@string/botNav_transactions_text"/>
+        <item
+            android:id="@+id/botNav_overview"
+            android:enabled="true"
+            android:icon="@drawable/ic_overview_black_24dp"
+            android:title="@string/botNav_overview_text"/>
+
+        <item
+            android:id="@+id/botNav_details"
+            android:enabled="true"
+            android:icon="@drawable/ic_details_black_24dp"
+            android:title="@string/botNav_details_text" />
+
+</menu>

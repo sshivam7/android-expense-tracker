@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/bottom_navigation_height"
+    tools:context=".TransactionFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/colorGreenAccent"
+        app:elevation="6dp" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Legend for entry frequency -->
+        <RelativeLayout
+            android:id="@+id/legend_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkGrey">
+
+            <TextView
+                android:id="@+id/daily_legend_text_view"
+                style="@style/legend_text_view"
+                android:background="@drawable/daily_outline"
+                android:layout_marginLeft="@dimen/edge_spacing"
+                android:layout_marginStart="@dimen/edge_spacing"
+                android:text="@string/daily" />
+
+            <TextView
+                android:id="@+id/weekly_legend_text_view"
+                style="@style/legend_text_view"
+                android:background="@drawable/weekly_outline"
+                android:layout_marginStart="@dimen/reduced_edge_spacing"
+                android:layout_marginLeft="@dimen/reduced_edge_spacing"
+                android:text="@string/weekly"
+                android:layout_toRightOf="@+id/daily_legend_text_view"
+                android:layout_toEndOf="@+id/daily_legend_text_view" />
+
+            <TextView
+                android:id="@+id/monthly_legend_text_view"
+                style="@style/legend_text_view"
+                android:background="@drawable/monthly_outline"
+                android:layout_marginStart="@dimen/reduced_edge_spacing"
+                android:layout_marginLeft="@dimen/reduced_edge_spacing"
+                android:text="@string/monthly"
+                android:layout_toRightOf="@+id/weekly_legend_text_view"
+                android:layout_toEndOf="@+id/weekly_legend_text_view" />
+
+            <TextView
+                android:id="@+id/yearly_legend_text_view"
+                style="@style/legend_text_view"
+                android:background="@drawable/yearly_outline"
+                android:layout_marginStart="@dimen/reduced_edge_spacing"
+                android:layout_marginLeft="@dimen/reduced_edge_spacing"
+                android:text="@string/yearly"
+                android:layout_toRightOf="@+id/monthly_legend_text_view"
+                android:layout_toEndOf="@+id/monthly_legend_text_view" />
+
+            <TextView
+                android:id="@+id/oneTime_legend_text_view"
+                style="@style/legend_text_view"
+                android:background="@drawable/one_time_outline"
+                android:layout_marginStart="@dimen/reduced_edge_spacing"
+                android:layout_marginLeft="@dimen/reduced_edge_spacing"
+                android:text="@string/one_time"
+                android:layout_toRightOf="@+id/yearly_legend_text_view"
+                android:layout_toEndOf="@+id/yearly_legend_text_view" />
+
+        </RelativeLayout>
+
+        <!-- RecyclerView to hold entries -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/transaction_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/edge_spacing"
+            android:layout_marginLeft="@dimen/edge_spacing"
+            android:layout_marginRight="@dimen/edge_spacing"
+            android:layout_marginEnd="@dimen/edge_spacing"
+            android:layout_marginTop="@dimen/reduced_edge_spacing"
+            tools:listitem="@layout/recyclerview_item"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

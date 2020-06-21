@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/bottom_navigation_height"
+    tools:context=".DetailsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Daily Data -->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/daily_textview"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/reduced_edge_spacing"
+                    android:text="@string/daily"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/daily_expense_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/edge_spacing"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/expense_bar_horizontal"
+                    app:layout_constraintEnd_toStartOf="@id/daily_expense_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/daily_textview" />
+
+                <TextView
+                    android:id="@+id/daily_expense_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/edge_spacing"
+                    android:layout_marginRight="@dimen/edge_spacing"
+                    android:text="@string/zero"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/daily_expense_bar"
+                    app:layout_constraintTop_toTopOf="@+id/daily_expense_bar" />
+
+                <ProgressBar
+                    android:id="@+id/daily_revenue_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/edge_spacing"
+                    android:layout_marginTop="@dimen/reduced_edge_spacing"
+                    android:layout_marginRight="@dimen/edge_spacing"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/revenue_bar_horizontal"
+                    app:layout_constraintEnd_toStartOf="@id/daily_expense_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/daily_expense_bar" />
+
+                <TextView
+                    android:id="@+id/daily_revenue_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/edge_spacing"
+                    android:layout_marginRight="@dimen/edge_spacing"
+                    android:text="@string/zero"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@id/daily_revenue_bar"
+                    app:layout_constraintTop_toTopOf="@+id/daily_revenue_bar" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Weekly Data -->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/weekly_textview"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/reduced_edge_spacing"
+                    android:text="@string/weekly"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/weekly_expense_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/edge_spacing"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/expense_bar_horizontal"
+                    app:layout_constraintEnd_toStartOf="@id/weekly_expense_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/weekly_textview" />
+
+                <TextView
+                    android:id="@+id/weekly_expense_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/edge_spacing"
+                    android:layout_marginRight="@dimen/edge_spacing"
+                    android:text="@string/zero"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/weekly_expense_bar"
+                    app:layout_constraintTop_toTopOf="@+id/weekly_expense_bar" />
+
+                <ProgressBar
+                    android:id="@+id/weekly_revenue_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/edge_spacing"
+                    android:layout_marginTop="@dimen/reduced_edge_spacing"
+                    android:layout_marginRight="@dimen/edge_spacing"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/revenue_bar_horizontal"
+                    app:layout_constraintEnd_toStartOf="@id/weekly_expense_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/weekly_expense_bar" />
+
+                <TextView
+                    android:id="@+id/weekly_revenue_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/edge_spacing"
+                    android:layout_marginRight="@dimen/edge_spacing"
+                    android:text="@string/zero"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@id/weekly_revenue_bar"
+                    app:layout_constraintTop_toTopOf="@+id/weekly_revenue_bar" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Monthly Data -->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/monthly_textview"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/reduced_edge_spacing"
+                    android:text="@string/monthly"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/monthly_expense_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/edge_spacing"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/expense_bar_horizontal"
+                    app:layout_constraintEnd_toStartOf="@id/monthly_expense_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/monthly_textview" />
+
+                <TextView
+                    android:id="@+id/monthly_expense_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/edge_spacing"
+                    android:layout_marginRight="@dimen/edge_spacing"
+                    android:text="@string/zero"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/monthly_expense_bar"
+                    app:layout_constraintTop_toTopOf="@+id/monthly_expense_bar" />
+
+                <ProgressBar
+                    android:id="@+id/monthly_revenue_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/edge_spacing"
+                    android:layout_marginTop="@dimen/reduced_edge_spacing"
+                    android:layout_marginRight="@dimen/edge_spacing"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/revenue_bar_horizontal"
+                    app:layout_constraintEnd_toStartOf="@id/monthly_expense_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/monthly_expense_bar" />
+
+                <TextView
+                    android:id="@+id/monthly_revenue_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/edge_spacing"
+                    android:layout_marginRight="@dimen/edge_spacing"
+                    android:text="@string/zero"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@id/monthly_revenue_bar"
+                    app:layout_constraintTop_toTopOf="@+id/monthly_revenue_bar" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Yearly Data -->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/yearly_textview"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/reduced_edge_spacing"
+                    android:text="@string/yearly"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/yearly_expense_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/edge_spacing"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/expense_bar_horizontal"
+                    app:layout_constraintEnd_toStartOf="@id/yearly_expense_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/yearly_textview" />
+
+                <TextView
+                    android:id="@+id/yearly_expense_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/edge_spacing"
+                    android:layout_marginRight="@dimen/edge_spacing"
+                    android:text="@string/zero"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/yearly_expense_bar"
+                    app:layout_constraintTop_toTopOf="@+id/yearly_expense_bar" />
+
+                <ProgressBar
+                    android:id="@+id/yearly_revenue_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/edge_spacing"
+                    android:layout_marginTop="@dimen/reduced_edge_spacing"
+                    android:layout_marginRight="@dimen/edge_spacing"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/revenue_bar_horizontal"
+                    app:layout_constraintEnd_toStartOf="@id/yearly_expense_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/yearly_expense_bar" />
+
+                <TextView
+                    android:id="@+id/yearly_revenue_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/edge_spacing"
+                    android:layout_marginRight="@dimen/edge_spacing"
+                    android:text="@string/zero"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@id/yearly_revenue_bar"
+                    app:layout_constraintTop_toTopOf="@+id/yearly_revenue_bar" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- One time (Single transaction) Data -->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="349dp"
+                android:layout_marginTop="@dimen/large_edge_spacing">
+
+                <TextView
+                    android:id="@+id/oneTime_textview"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/reduced_edge_spacing"
+                    android:text="@string/one_time_transaction"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/oneTime_expense_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/reduced_edge_spacing"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/expense_bar_horizontal"
+                    android:rotation="270"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/oneTime_textview" />
+
+                <TextView
+                    android:id="@+id/oneTime_expense_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/zero"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/oneTime_revenue_text"
+                    app:layout_constraintHorizontal_bias="0.404"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/oneTime_revenue_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="@dimen/reduced_edge_spacing"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/revenue_bar_horizontal"
+                    android:rotation="270"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/oneTime_textview" />
+
+                <TextView
+                    android:id="@+id/oneTime_revenue_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="72dp"
+                    android:layout_marginRight="72dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/zero"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

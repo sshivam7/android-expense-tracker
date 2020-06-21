@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="bottom_navigation_height">56dp</dimen>
+    <dimen name="edge_spacing">16dp</dimen>
+    <dimen name="large_edge_spacing">32dp</dimen>
+    <dimen name="graph_size">300dp</dimen>
+    <dimen name="reduced_edge_spacing">8dp</dimen>
+</resources>

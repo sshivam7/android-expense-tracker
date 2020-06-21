@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/about_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/edge_spacing"
+                    android:text="@string/about"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2" />
+
+                <!-- Text -->
+                <TextView
+                    android:id="@+id/about_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/edge_spacing"
+                    android:layout_marginRight="@dimen/edge_spacing"
+                    android:text="@string/about_text"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="@dimen/edge_spacing"
+                    android:adjustViewBounds="false"
+                    android:background="@mipmap/ic_launcher"
+                    android:contentDescription="@string/logo" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+</LinearLayout>

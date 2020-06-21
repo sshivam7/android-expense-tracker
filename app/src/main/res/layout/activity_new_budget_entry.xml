@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewBudgetEntryActivity">
+
+    <!-- Input Text fields for name and value -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/entryName_texInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/edge_spacing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/entryName_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/entry_name_title"
+            android:selectAllOnFocus="true"
+            android:text="@string/enter_name_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/entryValue_textInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/edge_spacing"
+        app:layout_constraintEnd_toStartOf="@+id/entryType_radiogroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryName_texInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/entryValue_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/amount_title"
+            android:inputType="number|numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="@string/enter_amount_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Expense/Revenue radio buttons -->
+
+    <RadioGroup
+        android:id="@+id/entryType_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/edge_spacing"
+        android:layout_marginRight="@dimen/large_edge_spacing"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/entryValue_textInput"
+        app:layout_constraintTop_toBottomOf="@+id/entryName_texInput"
+        android:layout_marginEnd="@dimen/large_edge_spacing">
+
+        <RadioButton
+            android:id="@+id/expense_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorRedAccent"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/expense" />
+
+        <RadioButton
+            android:id="@+id/revenue_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorRedAccent"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/revenue" />
+
+    </RadioGroup>
+
+    <!-- Add entry button -->
+    <Button
+        android:id="@+id/addEntry_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/edge_spacing"
+        android:text="@string/button_add_text"
+        style="?attr/materialButtonStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Drop down menu to select frequency -->
+    <Spinner
+        android:id="@+id/frequency_spinner"
+        android:layout_width="158dp"
+        android:layout_height="33dp"
+        android:layout_margin="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryValue_textInput" />
+
+    <!-- Chips to select expenseType -->
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/expense_type_chip_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/reduced_edge_spacing"
+        app:singleSelection="true"
+        app:checkedChip="@+id/other_chip"
+        app:layout_constraintTop_toBottomOf="@+id/frequency_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/rent_chip"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rent" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/food_chip"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/bills_chip"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bills" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/shopping_chip"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shopping" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/other_chip"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/other" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<resources>
+    <!-- Main Navigation -->
+    <string name="app_name">Expense Manager</string>
+    <string name="botNav_transactions_text">Transactions</string>
+    <string name="botNav_overview_text">Overview</string>
+    <string name="botNav_details_text">Details</string>
+
+    <!-- New Order Activity -->
+    <string name="entry_name_title">Entry Name</string>
+    <string name="enter_name_text">Enter name Here</string>
+    <string name="amount_title">Amount</string>
+    <string name="enter_amount_text">Enter amount here</string>
+    <string name="expense">Expense</string>
+    <string name="revenue">Revenue</string>
+    <!-- Spinner labels -->
+    <string-array name="labels_array">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+        <item>One Time</item>
+    </string-array>
+    <string name="button_add_text">Add Entry</string>
+
+    <!-- Transaction Section -->
+    <string name="add_error">Unable to add new entry</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+    <string name="one_time">One Time</string>
+    <string name="no_budget_entry">No Budget Entry</string>
+
+    <!-- Overview Section -->
+    <string name="summary_text">Summary</string>
+    <string name="yearly_profit_title">Yearly Profit</string>
+    <string name="zero">0</string>
+    <string name="expenses_total_text">Expenses: %1$s</string>
+    <string name="revenue_total_text">Revenue: %1$s</string>
+    <string name="food_expense_percent">Food is %1$s of total expenses</string>
+    <string name="rent_expense_percent">Rent is %1$s of total expenses</string>
+    <string name="bills_expense_percent">Bills are %1$s of total expenses</string>
+    <string name="shopping_expense_percent">Shopping is %1$s of total expenses</string>
+    <string name="other_expense_percent">Other is %1$s of total expenses</string>
+    <string name="expense_summary">Expense Summary</string>
+    <string name="rent">Rent</string>
+    <string name="food">Food</string>
+    <string name="bills">Bills</string>
+    <string name="other">Other</string>
+    <string name="shopping">Shopping</string>
+
+    <!-- Details Section -->
+    <string name="one_time_transaction">One Time Transactions</string>
+
+    <!-- Toolbar -->
+    <string name="clear_all">Clear All Data</string>
+    <string name="clear_data_toast">Clearing all data…</string>
+    <string name="about">About</string>
+    <string name="settings">Settings</string>
+
+    <!-- Notifications -->
+    <string name="notification_title">Track your expenses</string>
+    <string name="notification_description">Remember to track your expenses!</string>
+    <string name="notifications_on_msg">Notifications On</string>
+    <string name="notifications_off_msg">Notifications Off</string>
+
+    <!-- About Activity -->
+    <string name="logo">Logo</string>
+    <string name="about_text"> <b>Description:</b>  \n\nThe Expense Tracker application allows
+        users to track expenses and income in order to keep track of spending. \n\n<b>Overview
+        Section: </b>  \n\nThe overview section shows total expense, revenue, and
+        profit for the entire year. \n\n<i>Note: Entries categorized as daily are multiplied by
+        365, weekly are multiplied by 52, and monthly are multiplied by 12. This is done in order
+        to find total spending and income for the year</i> \n\n<b>Transactions Section:</b> \n\nThe
+        transaction section allows the use to view, add, and delete (swipe to delete) budget
+        entries. Creating a new entry requires an entry name, entry value, entry type (revenue,
+        expense), expense type, and frequency (daily, weekly, monthly, yearly, one_time).
+        \n\n<b>Details Section:</b>\n\nThe details section displays expenses and revenue on a
+        daily, weekly, monthly, yearly, and one time basis. \n\n<i>Note: Only Entries
+        tagged under daily, weekly, monthly, yearly will appear here. For a full summary
+        view the overview section to see a combined value for the year
+        </i> \n\n\n<b>Version: </b>1.0.4</string>
+
+</resources>

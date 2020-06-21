@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android=
+    "http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp">
+
+        <!-- Entry name TextView -->
+        <TextView
+            android:id="@+id/textView_name"
+            style="@style/text_view_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_value"
+            app:layout_constraintStart_toStartOf="@id/textView_frequency"
+            tools:text="placeholder text" />
+
+        <!-- Entry Value TextView -->
+        <TextView
+            android:id="@+id/textView_value"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/textView_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Value text" />
+
+        <!-- Entry frequency TextView (used to color code entries) -->
+        <TextView
+            android:id="@+id/textView_frequency"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_name"
+            app:layout_constraintEnd_toStartOf="@+id/textView_name"
+            tools:text="E" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
