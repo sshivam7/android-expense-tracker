@@ -847,6 +847,8 @@
         transaction section allows the use to view, add, and delete (swipe to delete) budget
         entries. Creating a new entry requires an entry name, entry value, entry type (revenue,
         expense), expense type, and frequency (daily, weekly, monthly, yearly, one_time).
+        Additionally, users can specify the type of expense to see an expense overview on the
+        summary page (some categorization options include food, bills, rent, shopping, and other).
         \n\n<b>Details Section:</b>\n\nThe details section displays expenses and revenue on a
         daily, weekly, monthly, yearly, and one time basis. \n\n<i>Note: Only Entries
         tagged under daily, weekly, monthly, yearly will appear here. For a full summary
