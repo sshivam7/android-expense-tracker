@@ -5,7 +5,7 @@ allows users to add, view, and delete new entries, as well as see a summary of t
 ## Installation
 Clone and import into Android Studio
 ```bash
-git clone https://github.com/ShivamSood17/AndroidExpenseTracker
+git clone https://github.com/ShivamSood17/android-expense-tracker
 ```
 
 ## Author 
