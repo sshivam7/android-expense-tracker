@@ -1,4 +1,4 @@
-#Thu Jul 09 19:17:34 EDT 2020
-base.0=C\:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+#Mon Aug 24 19:09:44 EDT 2020
+base.0=C\:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
