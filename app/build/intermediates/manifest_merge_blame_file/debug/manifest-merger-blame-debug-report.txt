@@ -15,7 +15,7 @@
 12        android:allowBackup="true"
 12-->C:\Users\soods\Documents\Projects\JAVA (Android)\ExpenseTracker\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.1.0] C:\Users\soods\.gradle\caches\transforms-2\files-2.1\34b4ab0d8b65ac74ddd00d45b26dd963\core-1.1.0\AndroidManifest.xml:24:18-86
+13-->[androidx.core:core:1.1.0] C:\Users\soods\.gradle\caches\transforms-2\files-2.1\76f2b6439d16df60df3177021482ee5a\core-1.1.0\AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
 15-->C:\Users\soods\Documents\Projects\JAVA (Android)\ExpenseTracker\app\src\main\AndroidManifest.xml:7:9-43
@@ -75,15 +75,15 @@
 43        </activity>
 44
 45        <provider
-45-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\soods\.gradle\caches\transforms-2\files-2.1\e953a6c6aa473293c3a94459e549ecaa\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+45-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\soods\.gradle\caches\transforms-2\files-2.1\0dd7ac39faaf6c192fa045218325acf5\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
 46            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-46-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\soods\.gradle\caches\transforms-2\files-2.1\e953a6c6aa473293c3a94459e549ecaa\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+46-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\soods\.gradle\caches\transforms-2\files-2.1\0dd7ac39faaf6c192fa045218325acf5\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
 47            android:authorities="com.example.expensetracker.lifecycle-process"
-47-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\soods\.gradle\caches\transforms-2\files-2.1\e953a6c6aa473293c3a94459e549ecaa\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+47-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\soods\.gradle\caches\transforms-2\files-2.1\0dd7ac39faaf6c192fa045218325acf5\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
 48            android:exported="false"
-48-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\soods\.gradle\caches\transforms-2\files-2.1\e953a6c6aa473293c3a94459e549ecaa\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+48-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\soods\.gradle\caches\transforms-2\files-2.1\0dd7ac39faaf6c192fa045218325acf5\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
 49            android:multiprocess="true" />
-49-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\soods\.gradle\caches\transforms-2\files-2.1\e953a6c6aa473293c3a94459e549ecaa\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+49-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\soods\.gradle\caches\transforms-2\files-2.1\0dd7ac39faaf6c192fa045218325acf5\jetified-lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
 50    </application>
 51
 52</manifest>

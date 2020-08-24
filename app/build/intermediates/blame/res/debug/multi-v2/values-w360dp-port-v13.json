@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\soods\\.gradle\\caches\\transforms-2\\files-2.1\\19b5a8b9f6e2450b553d83f6c0289e5d\\material-1.2.0-alpha02\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
+                    "source": "C:\\Users\\soods\\.gradle\\caches\\transforms-2\\files-2.1\\ae6acd41cc724cc655f785d2f8dd0370\\material-1.2.0-alpha02\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

@@ -56,12 +56,12 @@
         "source": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_info_white_24dp.png"
     },
     {
-        "merged": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_new_budget_entry.xml.flat",
-        "source": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\src\\main\\res\\layout\\activity_new_budget_entry.xml"
-    },
-    {
         "merged": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_info_white_24dp.png.flat",
         "source": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_info_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_new_budget_entry.xml.flat",
+        "source": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\src\\main\\res\\layout\\activity_new_budget_entry.xml"
     },
     {
         "merged": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_info_white_24dp.png.flat",
@@ -176,24 +176,24 @@
         "source": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable_graph_progress.xml.flat",
-        "source": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\src\\main\\res\\drawable\\graph_progress.xml"
-    },
-    {
         "merged": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_info_white_24dp.xml.flat",
         "source": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_info_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable_graph_progress.xml.flat",
+        "source": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\src\\main\\res\\drawable\\graph_progress.xml"
     },
     {
         "merged": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable_monthly_outline.xml.flat",
         "source": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\src\\main\\res\\drawable\\monthly_outline.xml"
     },
     {
-        "merged": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_list_black_24dp.png.flat",
-        "source": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_list_black_24dp.png"
-    },
-    {
         "merged": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_about.xml.flat",
         "source": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\src\\main\\res\\layout\\activity_about.xml"
+    },
+    {
+        "merged": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_list_black_24dp.png.flat",
+        "source": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_list_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_details_black_24dp.png.flat",
@@ -284,16 +284,16 @@
         "source": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_playlist_add_black_24dp.png"
     },
     {
+        "merged": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\res\\merged\\debug\\xml_preferences.xml.flat",
+        "source": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\src\\main\\res\\xml\\preferences.xml"
+    },
+    {
         "merged": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_details_black_24dp.png.flat",
         "source": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_details_black_24dp.png"
-    },
-    {
-        "merged": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\res\\merged\\debug\\xml_preferences.xml.flat",
-        "source": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\src\\main\\res\\xml\\preferences.xml"
     },
     {
         "merged": "C:\\Users\\soods\\Documents\\Projects\\JAVA (Android)\\ExpenseTracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable_graph_full.xml.flat",
