@@ -15,7 +15,7 @@ The application makes use of:
 ## Installation
 Clone and import into Android Studio
 ```bash
-git clone https://github.com/ShivamSood17/android-expense-tracker
+git clone https://github.com/sshivam7/android-expense-tracker
 ```
 
 ## Author 
